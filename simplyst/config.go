@@ -1,17 +1,21 @@
 package simplyst
 
 import (
+	"log"
+
 	"gopkg.in/mgo.v2"
 )
 
-var DB UserDatabase	
+// DB UserDatabase
+var DB UserDatabase
 
-func int()  {
-	
-var err error
+func int() {
 
-var cred *mgo.Credential
-DB, err = newMongoDB("mongodb://spiderman:spiderman@ds129153.mlab.com:29153/productshelf" cred)
+	var err error
+
+	var cred *mgo.Credential
+	DB, err = newMongoDB("mongodb://kashyaksupport:kashyaksupport123@ds151973.mlab.com:51973/simplystdatabase", cred)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
-
-
